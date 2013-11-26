@@ -1,0 +1,25 @@
+default:
+  paths:
+    # %behat.paths.base% is a directory where this config is located
+    #bootstrap: '%behat.paths.base%/behatBootstrap'
+    #features: '%behat.paths.base%/behatTests'
+  formatter:
+        name:                       pretty,html
+        parameters:
+            decorated:              true
+            verbose:                false
+            time:                   true
+            language:               en
+            output_path:            null, behat_report.html
+            multiline_arguments:    true
+  extensions:
+    mink_extension.phar:
+      mink_loader: 'mink.phar'
+      base_url: http:/localhost:8080
+      default_session: goutte
+      goutte:
+          guzzle_parameters:
+              curl.CURLOPT_SSL_VERIFYPEER: false
+              curl.CURLOPT_CERTINFO: false
+              curl.CURLOPT_TIMEOUT: 120
+              ssl.certificate_authority: false
