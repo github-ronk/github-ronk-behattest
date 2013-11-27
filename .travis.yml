@@ -5,7 +5,6 @@ before_script:
     - sudo apt-get update > /dev/null
     - sudo apt-get install -y --force-yes apache2 libapache2-mod-php5 php5-curl php5-mysql php5-intl
     - composer self-update
-    - composer update --prefer-dist
     - composer install --no-interaction --prefer-dist
     - "sh -e /etc/init.d/xvfb start"
     - "export DISPLAY=:99.0"
