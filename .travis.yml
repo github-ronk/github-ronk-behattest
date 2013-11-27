@@ -14,5 +14,7 @@ before_script:
     - sleep 5
 script:
     - /usr/bin/env php --version
+    - ls -l ./bin/behat
+    - ls -lL ./bin/behat
+    - wc -l ./bin/behat
     - ./bin/behat
-    - behat
