@@ -13,6 +13,6 @@ before_script:
     - "java -jar selenium-server-standalone-2.31.0.jar > /dev/null &"
     - sleep 5
 script:
-    - ls -lR
+    - /usr/bin/env php --version
     - ./bin/behat
     - behat
