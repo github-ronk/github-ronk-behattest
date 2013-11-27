@@ -4,7 +4,6 @@
         "behat/mink-extension": "*",
         "behat/mink-goutte-driver": "*"
     },
-
     "config": {
         "bin-dir": "bin/"
     }
