@@ -13,6 +13,8 @@ before_script:
     - "java -jar selenium-server-standalone-2.31.0.jar > /dev/null &"
     - sleep 5
 script:
+    - cd ./bin
+    - ls -l
     - ls -l ..
     - ls -l ../vendor
     - ls -l ../vendor/behat
